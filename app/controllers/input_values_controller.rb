@@ -30,7 +30,7 @@ private
 
 def set_input_value
     @input_value = InputValue.find_by(input_val: params[:input_val])
-  end
+end
 
   
   def input_value_params
