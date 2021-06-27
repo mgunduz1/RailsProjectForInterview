@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @font-face {
+    font-family: 'woody';
+    src: url('fonts/Driftwood.ttf');
+}
+
+@font-face {
+   font-family: 'classic';
+   src: url('fonts/Century731BT.ttf');
+}
+
+body {
+box-sizing: border-box;
+background-attachment: fixed;
+background-image: url("bg.jpg");
+background-position: center;
+background-repeat: none;
+background-size: cover;
+}
+
+
+.form-control {
+   background-color: transparent;
+   border: none;
+   width: 60vw;
+   margin: auto;
+}
+
+.form-control input {
+   width: 60vw;
+   background: transparent;
+   height: 8rem;
+   line-height: 4rem;
+   font-size: 4rem;
+   font-family: 'woody';
+}
+
+.form-control input {
+   border: 20px ridge rgba(75,54,33, 1);
+}
+
+.ex-btn {
+   border: 8px ridge #F0EAD6;
+   color: #F0EAD6;
+   font-family: 'classic';
+}
+
+.header-color {
+   color: #F0EAD6;
+   font-family: 'woody';
+}
+
+.result-layout {
+   color: #F0EAD6;
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.back-btn {
+   color: #F0EAD6;
+   font-family: 'woody';
+   border: 3px solid #F0EAD6;
+}

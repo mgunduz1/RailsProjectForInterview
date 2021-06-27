@@ -1,0 +1,25 @@
+
+<div class='container-fluid py-5 mt-5'>
+<div class='row py-5 my-5'>
+
+<h1 class="mx-auto text-center my-4 display-1 header-color">CARVE YOUR INPUT</h1>
+
+<%= form_with(model: input_value) do |form| %>
+  <% if input_value.errors.any? %>
+        <% input_value.errors.each do |error| %>
+          <h4 class="mx-auto text-center text-light"><%= error.message %></h4>
+        <% end %>
+  <% end %>
+
+
+  <div class="form-control my-3">
+    <%= form.text_field :input_val %>
+  </div>
+
+    <div class="actions mt-5 d-flex justify-content-center">
+    <%= form.submit "EXECUTE", class:"btn btn-lg ex-btn fs-2 fw-bold px-3" %>
+  </div>
+<% end %>
+
+
+</div>
