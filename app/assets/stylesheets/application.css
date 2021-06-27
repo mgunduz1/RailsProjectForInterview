@@ -16,12 +16,12 @@
 
  @font-face {
     font-family: 'woody';
-    src: url('fonts/Driftwood.ttf');
+    src: url('fonts/Driftwood.ttf') format('truetype');
 }
 
 @font-face {
    font-family: 'classic';
-   src: url('fonts/Century731BT.ttf');
+   src: url('fonts/Century731BT.ttf') format('truetype');
 }
 
 body {
