@@ -8,6 +8,11 @@ def new
     @input_value = InputValue.new
 end
 
+def index
+  @input_values_by_date = InputValue.all.order('created_at DESC').first(5)
+  @input_values_by_length = InputValue.all.order('LENGTH(input_val) DESC').first(5)
+end
+
 def create
     @input_value = InputValue.new(input_value_params)
 

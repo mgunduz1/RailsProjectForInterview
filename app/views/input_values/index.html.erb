@@ -1,0 +1,24 @@
+<div class='position-absolute top-0 left-0'>
+<%= link_to 'BACK TO MAIN', root_path, class:"btn btn-lg back-btn mt-4 ms-4 fs-2" %>
+</div>
+
+<div class='container-fluid mt-5'>
+<div class='row py-5'>
+<div class='col-6 mt-5'>
+<h1 class="text-center mx-auto mb-5 header-color">LATEST INPUTS</h1>
+<div class='d-flex flex-column'>
+<% @input_values_by_date.each do |input| %>
+<%= link_to input.input_val.truncate(60) , input_path_path(input.input_val), class:"index-items mb-3 text-center mx-auto" %>
+<% end %>
+</div>
+</div>
+<div class='col-6 mt-5'>
+<h1 class="text-center mx-auto mb-5 header-color">LONGEST INPUTS</h1>
+<div class='d-flex flex-column'>
+<% @input_values_by_length.each do |input| %>
+<%= link_to input.input_val.truncate(60) , input_path_path(input.input_val), class:"index-items mb-3 text-center mx-auto" %>
+<% end %>
+</div>
+</div>
+</div>
+</div>

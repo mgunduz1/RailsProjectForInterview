@@ -79,3 +79,24 @@ background-size: cover;
    font-family: 'woody';
    border: 3px solid #F0EAD6;
 }
+
+.back-btn:hover {
+   background-color: #F0EAD6;
+   color: rgba(75,54,33, 1);
+}
+
+.index-items {
+   text-decoration: none;
+   font-family: 'classic';
+   color: #F0EAD6;
+   border: 12px ridge rgba(75,54,33, 1);
+   padding: 1rem;
+   background-color: transparent;
+   width: 80%;
+   font-weight: 900;
+}
+
+.index-items:hover {
+   background-color: #F0EAD6;
+   color: rgba(75,54,33, 1);
+}
